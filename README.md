@@ -11,6 +11,7 @@ This is a simple Cab Booking application implemented in Java. The application us
 - [Design Patterns](#design-patterns)
 - [Usage](#usage)
 - [Dependencies](#dependencies)
+- [Output](#output)
 
 ## Introduction
 
@@ -56,3 +57,11 @@ The application leverages the following design patterns:
 
 - Java SDK (version X.X.X)
 - Scanner class (standard Java library)
+  
+## Output
+-Image below shows that the user is a subscriber and has discount applied on cab rides
+![Screenshot 2023-11-22 093423](https://github.com/AmanJ10/Cab-Booking-Application/assets/83915557/6a86e44b-b7e3-48ee-881e-12adb8902b0f)
+
+-Image below shows that the user is not a subscriber
+![Screenshot 2023-11-22 093510](https://github.com/AmanJ10/Cab-Booking-Application/assets/83915557/0da1331b-4503-479b-9580-370dfda0b6cf)
+
