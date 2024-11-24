@@ -1,5 +1,5 @@
 # CabBookingApplication
- Cab Booing Application using Design Patterns
+ Cab Booking Application using Design Patterns
 
 
 This is a simple Cab Booking application implemented in Java. The application uses various design patterns such as Singleton, Abstract Factory, Strategy, and Proxy to manage different aspects of the booking process.
