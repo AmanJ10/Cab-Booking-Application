@@ -1,3 +1,3 @@
 public interface PricingStratergy {
-    void prcing();
+    void applyPricing();
 }

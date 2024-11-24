@@ -9,16 +9,19 @@ public class cabBook {
         String password = sc.next();
 
         SubscriberAuthentication subscriberAuthentication = new ProxySubscriber(username,password);
+        PricingContext context = new PricingContext();
+
 
         if(subscriberAuthentication.authenticate(username, password))
         {
-            SubscriptionPricingStratergy subscriptionPricingStratergy = new SubscriptionPricingStratergy();
-            subscriptionPricingStratergy.prcing();
+            context.setPricingStrategy(new SubscriptionPricingStratergy());
+            context.executePricing();
+
         }
         else
         {
-            RegularPricing regularPricing = new RegularPricing();
-            regularPricing.prcing();
+            context.setPricingStrategy(new RegularPricing());
+            context.executePricing();
         }
 
         BookingManager bookingManager = BookingManager.getInstance();

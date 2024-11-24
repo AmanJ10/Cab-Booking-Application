@@ -1,4 +1,4 @@
-public class ProxySubscriber implements SubscriberAuthentication, PricingStratergy{
+public class ProxySubscriber implements SubscriberAuthentication{
 
     RealSubscriber realSubscriber;
     SubscriptionPricingStratergy subscriptionPricingStratergy;
@@ -9,18 +9,18 @@ public class ProxySubscriber implements SubscriberAuthentication, PricingStrater
         this.name = name;
         this.password = password;
         this.realSubscriber = new RealSubscriber();
-        this.subscriptionPricingStratergy = new SubscriptionPricingStratergy();
-        this.regularPricing = new RegularPricing();
+//        this.subscriptionPricingStratergy = new SubscriptionPricingStratergy();
+//        this.regularPricing = new RegularPricing();
 
     }
-    @Override
-    public void prcing() {
-        if(authenticate(name , password))
-            subscriptionPricingStratergy.prcing();
-        else
-            regularPricing.prcing();
-
-    }
+//    @Override
+//    public void prcing() {
+//        if(authenticate(name , password))
+//            subscriptionPricingStratergy.prcing();
+//        else
+//            regularPricing.prcing();
+//
+//    }
 
     @Override
     public boolean authenticate(String name, String password) {
